@@ -17,7 +17,22 @@ type DataPoolClass = Obj<DataPools, any> & {
 	13: Layouts; // Layouts
 	14: Timecodes; // Timecodes
     15: Timers; // Timers
-} & DataPoolChildren;
+}
+& {
+    Worlds: Worlds; // Worlds
+    Filters: Filters; // Filters
+    PresetPools: PresetPools; // PresetPools
+    Groups: Groups; // Groups
+    Sequences: Sequences; // Sequences
+    Plugins: Plugins; // Plugins
+    Macros: Macros; // default name: Macros
+    MAtricks: MAtricks; // MATricks
+    Configurations: Configurations; // Configurations
+    Pages: Pages; // Pages
+    Layouts: Layouts; // Layouts
+    Timecodes: Timecodes; // Timecodes
+    Timers: Timers; // Timers
+}
 
 type Worlds = Obj<DataPoolClass, World>;
 type World = Obj<Worlds, any> & {};
@@ -206,20 +221,3 @@ type DataPoolIndex =
     | 126
     | 127
     | 128
-
-
-type DataPoolChildren = {
-    Worlds: Worlds;
-    Filters: Filters;
-    PresetPools: PresetPools;
-    Groups: Groups;
-    Sequences: Sequences;
-    Plugins: Plugins;
-    Macros: Macros;
-    MATricks: MAtricks;
-    Configurations: Configurations;
-    Pages: Pages;
-    Layouts: Layouts;
-    Timecodes: Timecodes;
-    Timers: Timers;
-}
