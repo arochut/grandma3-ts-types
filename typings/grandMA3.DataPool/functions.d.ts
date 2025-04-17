@@ -4,6 +4,7 @@
 type DataPoolClass = Obj<DataPools, any> & {
 	index: DataPoolIndex
 } & {
+    1: Worlds; // Worlds
 	2: Filters; // Filters
 	4: PresetPools; // PresetPools
 	5: Groups; // Groups
@@ -11,10 +12,22 @@ type DataPoolClass = Obj<DataPools, any> & {
 	7: Plugins; // Plugins
 	8: Macros; // default name: Macros
 	10: MAtricks; // MATricks
+    11: Configurations; // Configurations
 	12: Pages; // Pages
 	13: Layouts; // Layouts
 	14: Timecodes; // Timecodes
+    15: Timers; // Timers
 };
+
+type Worlds = Obj<DataPoolClass, World>;
+type World = Obj<Worlds, any> & {};
+
+type Configurations = Obj<DataPoolClass, Configuration>;
+type Configuration = Obj<Configurations, any> & {};
+
+type Timers = Obj<DataPoolClass, Timer>;
+type Timer = Obj<Timers, any> & {};
+
 
 type Groups = Obj<DataPoolClass, Group>;
 type Group = Obj<Groups, any> & {

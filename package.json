@@ -17,14 +17,10 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/ma3-pro-plugins/grandma3-ts-types.git"
+		"url": "git+https://github.com/arochut/grandma3-ts-types.git"
 	},
 	"author": "Lukas Runge",
 	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/ma3-pro-plugins/grandma3-ts-types/issues"
-	},
-	"homepage": "https://github.com/ma3-pro-plugins/grandma3-ts-types#readme",
 	"devDependencies": {
 		"prettier": "^2.7.1",
 		"typescript": "^4.8.4",
