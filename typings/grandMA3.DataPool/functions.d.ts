@@ -11,7 +11,7 @@ type DataPoolClass = Obj<DataPools, any> & {
 	6: Sequences; // Sequences
 	7: Plugins; // Plugins
 	8: Macros; // default name: Macros
-    9: QuickKeys;
+    9: Quickeys;
 	10: MAtricks; // MATricks
     11: Configurations; // Configurations
 	12: Pages; // Pages
