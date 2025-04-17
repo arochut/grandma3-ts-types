@@ -17,7 +17,7 @@ type DataPoolClass = Obj<DataPools, any> & {
 	13: Layouts; // Layouts
 	14: Timecodes; // Timecodes
     15: Timers; // Timers
-};
+} & DataPoolChildren;
 
 type Worlds = Obj<DataPoolClass, World>;
 type World = Obj<Worlds, any> & {};
@@ -206,3 +206,20 @@ type DataPoolIndex =
     | 126
     | 127
     | 128
+
+
+type DataPoolChildren = {
+    Worlds: Worlds;
+    Filters: Filters;
+    PresetPools: PresetPools;
+    Groups: Groups;
+    Sequences: Sequences;
+    Plugins: Plugins;
+    Macros: Macros;
+    MATricks: MAtricks;
+    Configurations: Configurations;
+    Pages: Pages;
+    Layouts: Layouts;
+    Timecodes: Timecodes;
+    Timers: Timers;
+}
