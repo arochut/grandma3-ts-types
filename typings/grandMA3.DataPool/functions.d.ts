@@ -11,6 +11,7 @@ type DataPoolClass = Obj<DataPools, any> & {
 	6: Sequences; // Sequences
 	7: Plugins; // Plugins
 	8: Macros; // default name: Macros
+    9: QuickKeys;
 	10: MAtricks; // MATricks
     11: Configurations; // Configurations
 	12: Pages; // Pages
@@ -26,6 +27,7 @@ type DataPoolClass = Obj<DataPools, any> & {
     Sequences: Sequences; // Sequences
     Plugins: Plugins; // Plugins
     Macros: Macros; // default name: Macros
+    QuickKeys: QuickKeys;
     MAtricks: MAtricks; // MATricks
     Configurations: Configurations; // Configurations
     Pages: Pages; // Pages
@@ -43,6 +45,8 @@ type Configuration = Obj<Configurations, any> & {};
 type Timers = Obj<DataPoolClass, Timer>;
 type Timer = Obj<Timers, any> & {};
 
+type QuickKeys = Obj<DataPoolClass, QuickKey>;
+type QuickKey = Obj<QuickKeys, any> & {};
 
 type Groups = Obj<DataPoolClass, Group>;
 type Group = Obj<Groups, any> & {
